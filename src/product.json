@@ -2,12 +2,12 @@
     {
         "id" : 1,
         "title" : "Temel Gıda",
-        "price" : 400
+        "price" : 5
     },
     {
         "id" : 2,
         "title" : "İçecek",
-        "price" : 100
+        "price" : 10
     },
     {
         "id" : 3,
