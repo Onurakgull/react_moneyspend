@@ -6,7 +6,7 @@ import Basket from './components/Basket';
 
 
 function App() {
-  const [money, setMoney]=useState(100);
+  const [money, setMoney]=useState(1000000);
   const [basket, setBasket]=useState([]);
   const [total, setTotal] = useState(0)
 
@@ -24,9 +24,11 @@ function App() {
     <>
    
      <Header total={total} money={money}/>
+     <div className='container products'>
      {product.map(product => (
        <Product total={total} money={money} key={product.id} product={ product } basket={basket} setBasket={setBasket}/>
-     ))}     
+     ))}   
+       </div>  
      {total > 0 && (
      <Basket resetButton={resetButton} product={product} basket={ basket } total={total}/>
      )}
