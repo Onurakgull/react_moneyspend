@@ -2,21 +2,25 @@
     {
         "id" : 1,
         "title" : "Temel Gıda",
-        "price" : 5
+        "price" : 5,
+        "image": "https://www.kurtalangetir.com/public/uploads/all/nBkRaUtsHFmSkhSVbwOVNmhkMKPWEU4yGR5uHAMh.jpg"
     },
     {
         "id" : 2,
         "title" : "İçecek",
-        "price" : 10
+        "price" : 10,
+        "image": "https://www.gidahatti.com/wp-content/uploads/2015/12/icecek-www.gidahatti.com_.jpg"
     },
     {
         "id" : 3,
         "title" : "Kıyafet",
-        "price" : 900
+        "price" : 900,
+        "image" :"https://sadekadinlar.com/wp-content/uploads/2018/09/Genc-Kizlar-icin-sik-Gunluk-Kombinler-2019-728x410.jpg"
     },
     {
         "id" : 4,
         "title" : "Ulaşım Aracı",
-        "price" : 100000
+        "price" : 100000,
+        "image": "https://imagecdn.leasingoptions.co.uk/fit-in/750x500/image/vehicles/ids/vauxhall/corsa/corsa-hatchback/1.2-turbo-elite-5dr/95071/front_view/dea5edf8-e4b3-4352-927a-afd892539c5e.jpg"
     }
 ]
