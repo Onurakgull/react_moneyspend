@@ -1,16 +1,18 @@
 import React from 'react'
+import {moneyFormat} from '../helpers'
+import './App.css'
 
 const Header = ({ total , money }) => {
   return (
     <div>
       {total > 0 && money - total !== 0 && (
-        <div>Harcayacak ${ money - total } paran kaldı.</div>
+        <div className='header'>Harcayacak <span>${moneyFormat(money - total) }</span> paran kaldı.</div>
       )}
       {total === 0 &&(
-        <div>Harcamak için ${money} paran bulunmaktadır.</div>
+        <div className='header'>Harcamak için <span>${moneyFormat(money)}</span> paran bulunmaktadır.</div>
       )}
       {money -total === 0 && (
-        <div>Paran bitti, parasız insan boş insandır.</div>
+        <div className='header'>Paran bitti, parasız insan boş insandır.</div>
       )}
     </div>
   )
