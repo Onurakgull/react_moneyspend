@@ -3,10 +3,11 @@ import React from 'react'
 const BasketItem = ( { item, product}) => {
   return (
     <>
-      <div>
+    <li>
+        <div>
             {product.title} * $ {item.amount} 
       </div>
-
+    </li>
     </>
   )
 }
