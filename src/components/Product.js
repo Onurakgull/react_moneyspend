@@ -1,4 +1,6 @@
 import React from 'react'
+import './Product.css'
+import { moneyFormat } from '../helpers'
 
 const Product = ( { product, money, total, basket, setBasket }) => {
 
@@ -32,21 +34,14 @@ const Product = ( { product, money, total, basket, setBasket }) => {
 
   return (
     <div className='product'>
+      <img src={product.image} alt=""/>
       <h6>{ product.title }</h6>
-      <div className='price'>$ { product.price }</div>
+      <div className='price'>$ { moneyFormat(product.price) }</div>
       <div className='actions'>
-        <button disabled={total + product.price > money} onClick={addBasket}>Satın Al</button>
+        <button className='buy-btn' disabled={total + product.price > money} onClick={addBasket}>Satın Al</button>
         <span className='amount'>{ basketItem && basketItem.amount || 0 }</span>
-        <button disabled={!basketItem} onClick={removeBasket}>Sat</button>
+        <button className='sell-btn' disabled={!basketItem} onClick={removeBasket}>Sat</button>
       </div>
-      <style jsx>{`
-        .product{
-          padding:10px;
-          background:#fff;
-          border: 1px solid #ddd
-        }
-      `}
-      </style>
     </div>
   )
 }
